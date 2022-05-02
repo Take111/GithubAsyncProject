@@ -14,6 +14,7 @@
 		6FB001222814E8D800FBEC89 /* GithubAsyncProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB001212814E8D800FBEC89 /* GithubAsyncProjectTests.swift */; };
 		6FB0012C2814E8D800FBEC89 /* GithubAsyncProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0012B2814E8D800FBEC89 /* GithubAsyncProjectUITests.swift */; };
 		6FB0012E2814E8D800FBEC89 /* GithubAsyncProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0012D2814E8D800FBEC89 /* GithubAsyncProjectUITestsLaunchTests.swift */; };
+		ABAFCEFC281FB17700CF9BDA /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = ABAFCEFB281FB17700CF9BDA /* Search */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		6FB0012B2814E8D800FBEC89 /* GithubAsyncProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAsyncProjectUITests.swift; sourceTree = "<group>"; };
 		6FB0012D2814E8D800FBEC89 /* GithubAsyncProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAsyncProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6FB001432815202800FBEC89 /* Search */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Search; sourceTree = "<group>"; };
+		ABE5C5D6281FD32E00F62EF0 /* Entity */ = {isa = PBXFileReference; lastKnownFileType = text; name = Entity; path = GithubAsyncProject/Entity; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAFCEFC281FB17700CF9BDA /* Search in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 				6FB001202814E8D800FBEC89 /* GithubAsyncProjectTests */,
 				6FB0012A2814E8D800FBEC89 /* GithubAsyncProjectUITests */,
 				6FB0010E2814E8D700FBEC89 /* Products */,
+				ABAFCEFA281FB17700CF9BDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +99,8 @@
 		6FB0010F2814E8D700FBEC89 /* GithubAsyncProject */ = {
 			isa = PBXGroup;
 			children = (
+				ABE5C5D3281FD28E00F62EF0 /* Core */,
 				6FB0013D2814E92000FBEC89 /* Feature */,
-				6FB0013A2814E8EA00FBEC89 /* API */,
 				6FB001102814E8D700FBEC89 /* GithubAsyncProjectApp.swift */,
 				6FB001122814E8D700FBEC89 /* ContentView.swift */,
 				6FB001142814E8D800FBEC89 /* Assets.xcassets */,
@@ -130,35 +134,27 @@
 			path = GithubAsyncProjectUITests;
 			sourceTree = "<group>";
 		};
-		6FB0013A2814E8EA00FBEC89 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				6FB0013C2814E91400FBEC89 /* Client */,
-				6FB0013B2814E8FB00FBEC89 /* Entity */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		6FB0013B2814E8FB00FBEC89 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		6FB0013C2814E91400FBEC89 /* Client */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Client;
-			sourceTree = "<group>";
-		};
 		6FB0013D2814E92000FBEC89 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
 				6FB001432815202800FBEC89 /* Search */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		ABAFCEFA281FB17700CF9BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABE5C5D3281FD28E00F62EF0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ABE5C5D6281FD32E00F62EF0 /* Entity */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +173,9 @@
 			dependencies = (
 			);
 			name = GithubAsyncProject;
+			packageProductDependencies = (
+				ABAFCEFB281FB17700CF9BDA /* Search */,
+			);
 			productName = GithubAsyncProject;
 			productReference = 6FB0010D2814E8D700FBEC89 /* GithubAsyncProject.app */;
 			productType = "com.apple.product-type.application";
@@ -450,7 +449,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GithubAsyncProject/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "GithubAsyncProject/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -478,7 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GithubAsyncProject/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "GithubAsyncProject/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -611,6 +610,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABAFCEFB281FB17700CF9BDA /* Search */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Search;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6FB001052814E8D700FBEC89 /* Project object */;
 }
